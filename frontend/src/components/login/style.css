@@ -1,0 +1,132 @@
+::-webkit-scrollbar{
+  width: 0;
+}
+#login .subcontainer{
+  justify-content: center !important;
+  align-items: center !important;
+}
+.bg{
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  background: #222;
+  background: url('login.jpg') no-repeat center center/cover;
+}
+.bg::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(#1115, #000f);
+  backdrop-filter: blur(2px);
+}
+.formbox{
+  background: #fff;
+  color: #222;
+  padding: 2rem 2rem 1rem 2rem;
+  width: 320px;
+  border-radius: 5px;
+  gap: 1rem;
+  box-shadow: 0 0 10px var(--accent-tr);
+  position: relative;
+}
+
+.formbox h3{
+  opacity: .5;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.formbox .inputbox{
+  justify-content: center;
+  gap: 5px;
+  position: relative;
+}
+.formbox .inputbox label, .formbox .captchabox label{
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+.formbox .inputbox svg{
+  position: absolute;
+  bottom: .65rem;
+  left: .7rem;
+  height: 1rem;
+  fill: #555;
+}
+.formbox .inputbox input, .formbox .captchabox input{
+  background: #ddd;
+  font-size: 0.9rem;
+  padding: .5rem .5rem .5rem 2.5rem;
+  border-radius: 8px;
+}
+.formbox .checkbox{
+  gap: 5px;
+}
+.formbox .checkbox input{width: unset !important;}
+.formbox .checkbox label{
+  font-size: .7rem;
+  width: 100%;
+  opacity: .7;
+}
+.formbox .captchabox{
+  gap: 5px;
+}
+.formbox .captchabox input{
+  gap: 5px;
+}
+.formbox .captchabox #captchaval{
+  user-select: none;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  padding: 10px 0;
+  font-family: var(--mono-font) !important;
+  font-weight: 500;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  color: #fff;
+  margin-bottom: -5px;
+  box-shadow: none;
+  background: #222;
+  text-shadow: 0 0 5px #fff;
+}
+.formbox .captchabox #captchainput{
+  border-radius: 0 0 7px 7px;
+  padding-left: 10px;
+  text-align: center;
+}
+.formbox .captchabox #captchainput:focus-visible{
+  transform: scale(.98);
+}
+
+
+@media only screen and (max-width:400px) {
+   #login .subcontainer{
+    padding: 3vw;
+    padding-top: 1rem;
+    /* justify-content: flex-start; */
+  }
+  .formbox{
+    width: 100%;
+    max-height: 500px;
+    overflow-y: scroll;
+  }
+  .bg::before{
+    background: radial-gradient(#1115, #000d);
+  }
+}
+@media only screen and (max-height:600px) {
+   #login .subcontainer{
+    padding: 3vw;
+    padding-top: 1rem;
+    justify-content: flex-start;
+  }
+  .formbox{
+    width: 100%;
+    max-width: 350px;
+    overflow-y: scroll;
+  }
+  .bg::before{
+    background: radial-gradient(#1115, #000d);
+  }
+}

@@ -1,0 +1,62 @@
+.dashboard-content,.content{
+  height: 100%;
+}
+.username-heading{
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+.welcome-heading{
+  font-weight: 400;
+  opacity: .5;
+}
+.min-title{
+  font-size: .9rem;
+  opacity: .5;
+  letter-spacing: 1px;
+  font-weight: 300;
+  user-select: none;
+  pointer-events: none;
+  margin: 1rem 0;
+}
+.box-par{
+  max-height: 100%;
+  padding: 2rem;
+  background: var(--card);
+  border-radius: 10px;
+  box-shadow: 0 5px 10px #0005;
+  flex-wrap: wrap;
+  gap: 2rem;
+  overflow-y: scroll;
+  align-items: center;
+}
+.box-sub{
+  background: #fff;
+  color: #2228;
+  border-radius: 10px;
+  font-size: .9rem;
+  font-weight: 500;
+  padding: 1rem;
+  min-width: 250px;
+  max-width: 280px;
+  flex: 1;
+  height: 130px;
+  border-top: 10px solid var(--accent );
+  overflow-y: scroll;
+}
+.box-val{
+  color: #666;
+  font-size: 2rem;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.box-val-sub{
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.box-val-sub::before{
+  content: "Username: ";
+  font-weight: 500;
+  color: #333;
+}

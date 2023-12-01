@@ -1,0 +1,22 @@
+.header-container {
+  height: 3rem;
+  padding: 30px 10px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 1rem;
+  font-weight: 400;
+}
+
+.site-button{
+  box-shadow: none !important;
+  font-weight: 400;
+  filter: saturate(0);
+}
+.logout-button{
+  box-shadow: none !important;
+}
